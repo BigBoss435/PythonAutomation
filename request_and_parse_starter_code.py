@@ -14,6 +14,7 @@ response = requests.get(url, headers={"Accept": "text/html"})
 # uncomment the following line and replace with your code
 parsed_response = BeautifulSoup(response.text, "html.parser")
 
-# format the parsed HTML response in a way that’s easier to read and print it out
-# uncomment the following line before running the code
-print(parsed_response.prettify())
+titles = parsed_response.find_all("a", class_="block__item-title")
+
+for title in titles:
+    print(title.text)
