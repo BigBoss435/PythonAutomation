@@ -30,7 +30,7 @@ last_name.send_keys("Doe")
 # find the email field 
 email = driver.find_element(By.XPATH, '//*[@id="input-email"]')
 # fill in the email field 
-email.send_keys("johndoe@gmail.comc")
+email.send_keys("johndoe@gmail.com")
 
 # find the telephone field 
 telephone = driver.find_element(By.XPATH, '//*[@id="input-telephone"]')
